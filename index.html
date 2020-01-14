@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calcStyles.css" />
+    <script src="calc.js" defer></script>
+</head>
+<body>
+    <!-- !!!: Header -->
+    <div class="header">
+        <h1>JS Front End Calculator</h1>
+    </div>
+
+    <!-- !!!: Calc Container -->
+    <div class="container" id="calculator">
+        <!-- !!!: Output screen -->
+        <div class="row" id="display"></div>
+        <!-- !!!: clear and delete buttons -->
+        <div class="row">
+            <div class="col-1-1" id="clearDelete">
+                <button class="clearEntryButton" id="clearEntry" onclick="clearEntryButton()">CE</button>
+                <button class="clearButton" id="clear" onclick="clearButton()">C</button>
+                <button class="deleteButton" id="delete" onclick="backspace()">&#171;</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1-1">
+                <button class="fracButton" id="fraction" onclick="fraction()"><sup>1</sup>/<i>x</i></button>
+                <button class="squareButton" id="square" onclick="square()"><i>x</i><sup>2</sup></button>
+                <button class="sqrtButton" id="sqrt" onclick="sqrt()">&Sqrt;<sub>x</sub></button>
+                <button class="operator" onclick="setOperator(4)">&#247;</button>
+            </div>
+        </div>
+        <!-- !!!: Rows for all the number buttons -->
+        <div class="row">
+            <div class="col-1-1">
+                <button class="numButton" onclick="setValue(7)">7</button>
+                <button class="numButton" onclick="setValue(8)">8</button>
+                <button class="numButton" onclick="setValue(9)">9</button>
+                <button class="operator" onclick="setOperator(3)">x</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1-1">
+                <button class="numButton" onclick="setValue(4)">4</button>
+                <button class="numButton" onclick="setValue(5)">5</button>
+                <button class="numButton" onclick="setValue(6)">6</button>
+                <button class="operator"onclick="setOperator(2)">-</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1-1">
+                <button class="numButton" onclick="setValue(1)">1</button>
+                <button class="numButton" onclick="setValue(2)">2</button>
+                <button class="numButton" onclick="setValue(3)">3</button>
+                <button class="operator" onclick="setOperator(1)">+</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1-1">
+                <button class="numButton" onclick="setValue(0)">0</button>
+                <button class="operator" onclick="setDecimal()">.</button>
+                <button class="operator" id="equals" onclick="equalClick()">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

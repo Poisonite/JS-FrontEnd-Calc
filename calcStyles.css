@@ -1,0 +1,98 @@
+/* !!!: Styles for index.html/JS Calculator */
+
+/* !!!: Font Imports */
+@import url('https://fonts.googleapis.com/css?family=Bubblegum+Sans&display=swap');
+
+html{
+    height: fill;
+}
+body{
+    background-color: white;
+    background: linear-gradient(lightblue, rgb(10, 126, 172));
+    font-size: 20px;
+    font-family: 'Bubblegum Sans', cursive;
+}
+
+/* !!!: Header */
+.header{
+    text-align: center;
+    background-color: rgb(34, 34, 34);
+    color: white;
+    border: rgb(78, 212, 230) solid 5px;
+    padding: 5px 0px;
+    margin: 10px 0px;
+}
+h1{
+    margin: 10px 0px;
+    font-size: 40px;
+}
+
+/* !!!: calc container */
+
+#calculator{
+    width: 420px;
+    height: auto;
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(8, 110, 150);
+    padding-top: 20px;
+    border: rgb(78, 212, 230) solid 2px;
+}
+
+/* !!!: display, clear, and delete buttons */
+#display{
+    border: solid 2px rgb(78, 212, 230);
+    height: 45px;
+    padding: 5px;
+    text-align: right;
+    float: none;
+    margin: 0 auto;
+    background-color: rgb(26, 240, 186);
+    border-radius: 7px;
+}
+#clear, #delete, #clearEntry{
+    height: 50px;
+    border-radius: 5px;
+    background-color: rgb(34, 34, 34);
+    text-align: center;
+    margin: 20px 16px 0px 0px;
+    color: white;
+    margin-right: 20px;
+}
+#clear:hover, #delete:hover, #clearEntry:hover{
+    background-color: white;
+    color: rgb(34, 34, 34);
+    transition: background-color 2s;
+    transition: color 1s;
+}
+#clearDelete{
+    width: 100%;
+    margin-left: 10px;
+}
+/* !!!: number rows */
+button{
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    border-radius: 32px;
+    background-color: rgb(26, 204, 159);
+    color: white;
+    font-size: 30px;
+}
+button:hover{
+    background-color: rgb(26, 240, 186);
+    color: rgb(179, 179, 179);
+    transition: background-color 2s;
+    transition: color 2s;
+}
+.operator{
+    background-color: rgb(26, 204, 195);
+    color: white;
+}
+.operator:hover{
+    background-color: rgb(29, 240, 229);
+    color: rgb(179, 179, 179);
+    transition: background-color 2s;
+    transition: color 2s;
+}
