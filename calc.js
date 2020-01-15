@@ -162,13 +162,52 @@ function setDecimal(){
 }
 
 //Clears the current number, either 1 or 2 depending on whether flag is true
-function clearEntryButton(){}
+function clearEntryButton(){
+    if(flag === false){
+        display.innerHTML = "";
+        num1 = "";
+    }
+    else if(flag === true){
+        display.innerHTML = num1 + opString;
+        num2 = "";
+    }
+}
 
-//
-function fraction(){}
+//divides 1 by the current number
+function fraction(){
+    if(flag === false){
+        num1 = 1/num1;
+        display.innerHTML = num1;
+        equalTo = true;
+    }
+    else if(flag === true){
+        num2 = 1/num2;
+        equalClick();
+    }
+}
 
 //squares the current number, either 1 or 2 depending on whether flag is true
-function square(){}
+function square(){
+    if(flag === false){
+        num1 = Math.pow(num1, 2);
+        display.innerHTML = num1;
+        equalTo = true;
+    }
+    else if(flag === true){
+        num2 = Math.pow(num2, 2);
+        equalClick();
+    }
+}
 
 //takes the square root of the current number, either 1 or 2 depending on whether flag is true
-function sqrt(){}
+function sqrt(){
+    if(flag === false){
+        num1 = Math.sqrt(num1);
+        display.innerHTML = num1;
+        equalTo = true;
+    }
+    else if(flag === true){
+        num2 = Math.sqrt(num2);
+        equalClick();
+    }
+}
